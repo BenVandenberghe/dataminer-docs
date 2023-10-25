@@ -4,13 +4,13 @@ uid: Introduction
 
 # About DataMiner connectors
 
-A DataMiner connector (also referred to as a "driver" or "protocol") is an XML file containing all the information a DataMiner Agent needs to be able to communicate with the device: instructions on how to poll the device and display all relevant data on the user interface (i.e. DataMiner Cube element cards), default port settings, alarm thresholds, parameter labels, etc. The language used to define a protocol is referred to as the DataMiner Protocol Markup Language (DPML).
+A DataMiner connector (also referred to as a "driver" or "protocol") is an XML file containing all the information a DataMiner System needs to be able to communicate with the third party product (which could be a hardware product, a software product or cloud service): instructions on how to poll the product and display all relevant data on the user interface (i.e. DataMiner Cube element cards), default port settings, alarm thresholds, parameter labels, etc. The language used to define a protocol is referred to as the DataMiner Protocol Markup Language (DPML).
 
 A DataMiner protocol can be uploaded to a DataMiner Agent, so that elements can be created that will run the protocol.
 
 ![alt text](../../images/DataMinerAgent.svg "Conceptual overview of a DataMiner Agent")
 
-This guide provides an overview of the different components of a protocol and what happens when a protocol is executed by a DataMiner Agent:
+This guide provides an overview of the different components of a protocol and what happens when a protocol is executed by a DataMiner System:
 
 - For more information about the key concepts you need to know to be able to develop protocols, see <xref:ConnectorFundamentals>.
 - For an overview of the different UI components that can be used in a DataMiner protocol, see <xref:UIComponents>.
@@ -24,8 +24,7 @@ This guide provides an overview of the different components of a protocol and wh
 
 ## Using DataMiner connectors in a DataMiner System
 
-When you have created or updated a DataMiner protocol, it first needs to be uploaded to a DataMiner Agent,
-which will then automatically copy it to each of its peers in the DataMiner System it belongs to. You can then
+When you have created or updated a DataMiner protocol, it first needs to be uploaded to a DataMiner System. You can then
 start creating elements that will use that protocol.
 
 - For more information on how to upload a protocol, refer to Adding a protocol or protocol version to your DataMiner System.
